@@ -1,5 +1,4 @@
-body		{font: 15px/1.7em "Helvetica Neue", helvetica, Arial, verdana, sans-serif; color:#262a34;padding:0 40px 0 40px; max-width:600px; margin:0 auto; -webkit-font-smoothing:antialiased; }
-
+body		{font: 15px/1.7em "Helvetica Neue", helvetica, Arial, verdana, sans-serif; color:#262a34;padding:0 40px 0 40px; max-width:650px; margin:0 auto; -webkit-font-smoothing:antialiased; background-color:#ffffff}
 
 a			{text-decoration:none; color:#4d7cd6;}
 a:hover		{text-decoration:none; border-bottom:1px solid #cad9f7;}
@@ -16,7 +15,7 @@ h4			{font-size:20px; margin:1em 0 0 0;}
 h5			{font-size:15px; color:#262a34; margin:.4em 0;}
 
 small		{color:#8b8e91; font-size:12px; line-height:150%; margin-bottom:3em; }
-p 			{color:#4a4d52; margin:.5em 0 1em; line-height:1.5em;}
+p 			{color:#4a4d52; margin:.5em 0 3em; line-height:1.5em;}
 b			{line-height:1.5em;}
 
 .clear		{clear:both; font-size:0px;}
@@ -53,3 +52,8 @@ nav span.next {text-align:right}
 footer {border-top: 1px solid}
 
 nav, footer {font-size: 11px; padding: 10px 0; color:#BFBFBF; border-color:#E5E5E5}
+
+.alignLeft { float:left; margin-right: 1em; margin-top:0.5em; margin-bottom: 2em}
+.alignRight { float:right; margin-top:1.5em; margin-left: 2em; margin-bottom: 1em; }
+.fill { width: 100%; }
+

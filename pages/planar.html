@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<h2><a href="/">Yuliy Schwartzburg</a>, <a href="http://lgg.epfl.ch/people.php?p=1">Mark Pauly</a></h2>
+<a href="http://epfl.ch/">École Polytechnique Fédérale de Lausanne</a>, <a href="http://lgg.epfl.ch">Computer Graphics and Geometry Laboratory</a>
+<h1>Fabrication-aware Design with Intersecting Planar Pieces</h1>
+<h3>Proceedings of Eurographics 2013<br/>
+  Computer Graphics Forum<br/>
+  Vol. 32, No. 2, May 2013</h3>
+
+{% load markup %}
+{% filter markdown %}
+
+<img src="./static/images/cardboard_teaser.png" class="fill" width="100%">
+
+Abstract
+--------
+
+We propose a computational design approach to generate 3D models composed of interlocking planar pieces. We
+show how intricate 3D forms can be created by sliding the pieces into each other along straight slits, leading
+to a simple construction that does not require glue, screws, or other means of support. To facilitate the design
+process, we present an abstraction model that formalizes the main geometric constraints imposed by fabrication
+and assembly, and incorporates conditions on the rigidity of the resulting structure. We show that the tight coupling
+of constraints makes manual design highly nontrivial and introduce an optimization method to automate constraint
+satisfaction based on an analysis of the constraint relation graph. This algorithm ensures that the planar parts
+can be fabricated and assembled. We demonstrate the versatility of our approach by creating 3D toy models, an
+architectural design study, and several examples of functional furniture.
+
+Video
+-----
+
+<iframe width="100%" height="394" src="http://www.youtube.com/embed/A3Ka6baKWtU" frameborder="0" allowfullscreen></iframe>
+
+Materials
+---------
+<small>Note: This is the author's version of the work. It is posted here by permission
+of Eurographics for personal use. Not for redistribution. Note that the
+definitive versions of all Eurographics papers can be downloaded at
+http://diglib.eg.org/. ACM SIGGRAPH papers can be downloaded at
+http://www.acm.org/dl/.</small>
+
+>
+  - [Paper (pre-print)](http://lgg.epfl.ch/publications/2013/PlanarPieces/paper.pdf)  
+  - [Extended Paper](http://lgg.epfl.ch/publications/2013/PlanarPieces/extended.pdf)  
+
+
+Bibtex
+------
+
+<pre>
+@article{Schwartzburg13,
+author = {Schwartzburg, Yuliy and Pauly, Mark},
+title = {Fabrication-aware Design with Intersecting Planar Pieces},
+journal = {Computer Graphics Forum (Proceedings of Eurographics 2013)},
+volume = {32},
+number = {2},
+pages = {317--326},
+year = {2013}
+}
+</pre>
+
+{% endfilter %}
+
+{% endblock %}
