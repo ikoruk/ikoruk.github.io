@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Yuliy Schwartzburg</title>
+	
+	<link rel="shortcut icon" href="./static/favicon.ico">
+	<link rel="stylesheet" href="./static/css/master.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="canonical" href="" />
+	
+  <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-37803851-1']);
+_gaq.push(['_setDomainName', 'chateaunoir.net']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+  </script>
+</head>
+<body>
+
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
+
+<p>
+	Sorry the page <b id="url"></b> could not be found on this server.
+</p>
+
+</body>
+</html>
